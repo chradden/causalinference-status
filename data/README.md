@@ -17,15 +17,6 @@ with detailed building characteristics, energy use by fuel and end use, and demo
 The raw RECS CSV is *not* committed to the repo (53 MB). It is re-downloaded automatically by
 `load_recs.py` on first run. Only the small processed CSV is versioned.
 
-## Why this dataset
-
-| Property | Why it matters |
-|---|---|
-| **Real, nationally representative survey** | Avoids the "synthetic-data only" criticism |
-| **Has an observable retrofit-like treatment** | `TYPEGLASS` (single vs double/triple-pane windows) — a canonical efficiency measure |
-| **Rich covariates** | Building age, floor area, climate zone, housing type, household size, income — exactly the confounders needed for an unconfoundedness-based causal design |
-| **n ≈ 17,000** | Plenty of power for Double Machine Learning + Causal Forest |
-| **Open & instantly downloadable** | No application or registration needed |
 
 ## Schema of `recs2020_processed.csv`
 
